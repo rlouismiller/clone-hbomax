@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+
+
+@keyframes animacao {
+    0% {
+        transform: rotate(0deg);
+    }
+    2% {
+        transform: rotate(5deg);
+    } 
+    4% {
+        transform: rotate(-5deg);
+    } 
+    6% {
+        transform: rotate(5deg);
+    }   
+    8% {
+        transform: rotate(-5deg);
+    }  
+    8% {
+        transform: rotate(0deg);
+    } 
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: raleway;
+    font-size: large;
+    color: white;
+    background: #020228;
+    text-align: center;
+    margin: 0;
+    
+    
+}
+
+header, main, aside, footer{
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 300px;
+    
+}
+section, nav {
+    position: relative;
+    width: 300px;
+    align-self: center;
+    
+    
+}
+
+a {
+    
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    letter-spacing: 2px;    
+    padding: 0.8rem;
+    border-radius: 25px;
+    width: 140px;
+    
+    
+}
+
+img {
+    width: 100%;
+}
+
+/*AQUI COMEÇA O CÓDIGO*/
+
+/*HEADER*/
+
+.header{
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;     
+    height: 100px;
+    z-index: 10;
+}
+
+
+
+
+.header_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header_logo {
+    width: 100px;
+    margin: 10px auto;
+}
+
+.botao {
+    width: 190px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 25px;
+
+}
+
+#assineAqui {
+    background-color: blueviolet;
+   
+}
+
+#assineAqui:hover {
+    background: white;
+    color: black;
+    transition: 1s;
+}
+
+/*MAIN*/
+
+.main_canaisMax{
+      
+    display: flex;
+    position: relative;  
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 140px 0 30px 0;
+    gap: 20px;
+
+/*curta as melhores histórias*/
+    
+}
+
+.main_historias{
+    text-align: center;   
+    text-transform: uppercase;
+
+
+}
+
+#paraTodoMundo {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#valor {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.historia_barra{
+    width: 80%;
+    height: 5px;
+    background: green;
+}
+
+.assine_agora{
+    background: linear-gradient(45deg, #9b34ef 0%, #490cb0 20%, transparent 100%);
+    font-size: 1.3rem;
+    border: 5px solid purple;
+    font-weight: normal;
+    border-radius: 40px; 
+    height: 70px;
+    line-height: 70px;
+    animation: animacao 5s ease-in-out infinite;
+}
+
+.aPartirDe {
+    padding: 20px 0;
+}
+
+
+
+
+
+.historia_aplicavel {
+    padding: 20px 0px;
+    font-size: 1rem;
+   
+
+}
+
+/*CARDS DE PLANOS*/
+
+.planosLayout {
+    width: 300px;
+    background: linear-gradient(150deg, #9b34ef 0%, #490cb0 20%, transparent 100%);
+    border-radius: 20px;
+    margin: 2rem 0
+}
+
+.planosLayout li {
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: left;
+}
+
+.planosLayout a{
+    background: linear-gradient(45deg, #9b34ef 0%, #490cb0 20%, transparent 100%);
+}
+
+.descubra {
+    padding: 30px 0;
+}
+
+.botaoCards {
+    width: 300px;
+    
+}
+/*CARDS UNIVERSOS*/
+
+
+.cardsChannels {
+    display: flex; 
+    flex-wrap: nowrap;
+    position: relative;
+    justify-content: left; 
+    align-items: center;
+    width: 300px;    
+    overflow-x: scroll;
+    overflow-y: hidden;
+    border-radius: 20px;
+    gap: 10px;
+}
+
+.cardsChannels div img {
+    width: 300px;
+}
+
+.sobreposicao {
+    position: relative;
+}
+
+
+.frente {
+    position: relative;
+    z-index: 8;
+
+}
+
+.verso {
+    position: absolute;
+    z-index: 6;
+    top: 0px;
+    left: 0px;
+}
+
+.frente:hover {
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+}
+ 
+/*LINKS FINAIS*/
+
+.navegacao {
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+    margin: auto;
+    padding: 30px 0px;
+    align-items: center;
+    
+
+}
+
+.direitos{
+    font-size: 12px;
+    width: 300px;
+    padding-bottom: 30px;
+    margin: auto;
+}
+
+/*REDES SOCIAIS*/
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*MEDIA QUERIES*/
+    
+
+@media screen and (min-width:426px) {
+
+
+    header {        
+        flex-direction: row;       
+}
+    section, nav {        
+        width: 100%;
+        justify-content: left;
+    }
+
+    main, footer {
+        width: 100%;
+        min-width: 426px;
+    }
+
+
+  .main_canaisMax{
+      
+        display: flex;
+        position: relative;  
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 140px 0 30px 0;
+        gap: 20px;
+    }
+
+    .planosLayout {
+        margin: auto;
+        width: 700px;        
+        
+    }    
+    
+    .botaoCards {
+        width: 600px;
+        
+    }
+
+    .cardsChannels {
+        
+        flex-wrap: wrap;        
+        justify-content: center;         
+        width: 700px;            
+        gap: 30px;
+        overflow-x: hidden;
+    }
+
+    .navegacao {
+        
+        flex-direction: row;
+        width: 700px;
+        margin: auto;     
+        
+    
+    }
+    
+    .direitos{
+        
+        width: 700px;        
+    }
+
+    .redes {
+        
+        justify-content: space-around;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (min-width:1025px) {
+
+}
+

@@ -1,0 +1,544 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+
+
+:root {
+    scroll-behavior: smooth;
+}
+
+
+
+
+@keyframes balanco {
+    0% {
+        transform: rotate(0deg);
+        
+    }
+    2% {
+        transform: rotate(5deg);
+        
+    }
+    4% {
+        transform: rotate(-10deg);      
+        
+    }
+    6% {
+        transform: rotate(10deg);     
+        
+    }
+    8% {
+        transform: rotate(-5deg);     
+        
+    }
+    10% {
+        transform: rotate(5deg);     
+        
+    }
+    12% {
+        transform: rotate(0deg);     
+        
+    }
+    
+}
+
+  /* Custom Scroll */
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #b535f6;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff00e5;
+  }
+
+
+
+/*GLOBAIS*/
+
+body {
+    font-family: Raleway;
+    color: white;
+    background:#020228;
+    margin: 0;
+    
+    
+}
+
+header {
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;   
+    position: fixed;     
+    width: 100%;
+    height: 120px;
+    margin: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+main {
+    text-align: center;
+    padding: 0.5rem;    
+}
+
+
+p {
+    text-align: center;
+}
+
+li {
+    text-align: left;
+    padding: 1rem 0;
+}
+
+ 
+
+
+img {
+    width: 100%;
+    
+    
+}
+
+a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem; 
+    padding: 10px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    text-align: center;
+    padding: 0 1rem;
+}
+
+/*HEADER*/
+
+#logohbomax {
+    width: 120px;
+    margin: auto;
+    padding: 20px;
+}
+
+#assinando {
+    background: purple;
+    border-radius: 25px;  
+    transition: 1s; 
+   
+}
+
+#assinando:hover{
+    background: white;
+    color: black;
+    
+}
+
+/*CANAIS*/
+
+.canaisHbo {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    gap: 2.1rem;
+    padding: 160px 0 2rem 0;
+   
+}
+
+/*CURTA AS MELHORES HISTORIAS*/
+
+.curta {
+    text-transform: uppercase;
+}
+
+.todomundo {
+    font-size: xxx-large;
+}
+
+.divisor{ 
+    margin: auto;
+    width: 60%;
+    height: 5px;
+    background: linear-gradient(
+        90deg,
+        #5516ba,
+        rgba(255, 0, 229, 0.5) 80%
+      );
+}
+
+.assinaturas {
+    font-weight: lighter;
+    font-size: 1.4rem;
+}
+
+#valor {
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+
+#botaoMeio {
+   
+    text-align: center;
+    font-size: 1rem;
+    background:linear-gradient(
+        90deg,
+        #9b34ef 0%,
+        #490cb0 20%,
+        transparent 100%
+      );
+    width: 13rem;
+    height: 2rem;
+    line-height: 2rem;
+    border-radius: 50px;  
+       
+    animation: balanco 3s ease infinite;
+    
+    transition: 3s;
+    
+}
+
+#botaoMeio:hover {
+    filter:saturate(3);
+   
+   
+    
+    
+    
+}
+
+.aplicavel{
+    font-weight: lighter;
+    font-size: 1rem;
+    padding: 20px 0;
+}
+
+/*CONHECA NOSSOS PLANOS*/
+
+.conhecaplanos {
+    font-size: xx-large;
+}
+
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card_mobile, .card_multitelas {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0deg, transparent, #6f2acf);
+    border-radius: 25px;
+    font-size: 1rem;
+    width: 300px;    
+    
+    
+}
+
+.planos {
+    font-size: x-large;
+    font-weight: 600;
+    
+}
+
+.valorplanos {
+    font-size: larger;
+    color: rgb(165, 29, 115);
+    font-weight: bolder;
+}
+
+#planos_mes {
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.escolherPlanos {
+    display: inline-block;
+    background: linear-gradient(45deg, #6e00ff, transparent);
+    border-radius: 25px;
+    padding: 1rem;    
+    align-self: center;
+}
+    
+
+
+/*CARDS DE CANAIS*/
+
+
+.descubra {
+    font-size: 1.5rem;
+}
+
+.producoes {
+    justify-self: center;
+    display: flex;
+    flex-wrap: nowrap;   
+    width: 300px;    
+    gap: 10px;
+    overflow-x: auto;
+}
+
+.caixadeimagens {
+    position: relative;
+    width: 295px;    
+    min-width: 295px;    
+    border-radius: 11px;
+    
+    
+}
+
+.frente {
+    position: relative;
+    z-index: 5;
+    transition: 1s;
+    
+}
+
+.verso {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    
+}
+
+.frente:hover {
+    opacity: 0;
+    
+}
+
+/*LINKS INFERIORES*/
+
+.navegacao {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+}
+
+.end {
+    display: inline-block;
+    
+}
+
+.direitos {
+    font-size: smaller;
+    font-weight: lighter;
+    padding: 30px 0;
+}
+
+/*REDES SOCIAIS*/
+
+.redessociais {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+
+
+
+/*MEDIA SCREEN*/
+
+@media screen and (min-width:426px) {
+
+
+    header {
+        
+        flex-direction: row;
+        justify-content: space-between;        
+        position: fixed;     
+        width: 100%;
+        height: 60px;
+        margin: 0;
+        z-index: 10;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .navegacaoInicial {
+        margin-top: 14px;   
+        padding: 0 20px;      
+        
+    }
+    #logohbomax {
+        width: 140px; 
+        margin: 0;       
+        padding: 20px;
+    }
+    
+    #assinando {
+        background: purple;
+        border-radius: 25px;  
+        transition: 1s;         
+       
+    }
+    
+    
+    .canaisHbo {
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: space-evenly; 
+        align-items: center;
+        gap: 2.1rem;
+        padding: 160px 100px 2rem 100px;
+    }
+
+    .card_mobile, .card_multitelas {
+        width:80%;
+        font-size: 1.1rem;
+    }
+
+    .valorplanos {
+        font-size: 2rem;
+    }
+
+    .escolherPlanos {
+        width: 280px;
+        transition: 1s;
+    }
+
+    .escolherPlanos:hover{
+        transform: scale(1.1);
+        filter:saturate(3);
+        
+
+    }
+    .caixadeimagens {
+        position: relative;
+        width: 300px;    
+        min-width: 300px;
+        border-radius: 11px;
+    }
+
+    .producoes {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: auto;
+        overflow-x: hidden;
+    }
+
+    .navegacao {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+}
+
+@media screen and (min-width:769px) {
+
+.cards {        
+        flex-direction: row;
+        perspective: 500px;
+        
+}
+
+.card_mobile, .card_multitelas {
+    
+    border-radius: 25px;
+    font-size: 1rem;
+    justify-content: space-between;
+    width: 500px; 
+    height: 500px;
+}
+
+
+.escolherPlanos {
+    
+    
+    border-radius: 25px;
+    width: 70%;
+    padding: 1rem;
+}
+
+.producoes {
+    justify-self: center;
+    display: flex;
+    flex-wrap: wrap;   
+    width: auto; 
+    max-width: 768px;   
+    gap: 10px;
+    
+}
+
+.caixadeimagens {
+    position: relative;
+    width: 249px;    
+    min-width: 249px;
+    border-radius: 11px;
+}
+.end {
+    
+    margin: 0 20px;
+}
+   
+    
+    
+}
+
+@media screen and (min-width:1025px) {
+
+    .producoes {
+        justify-self: center;
+        display: flex;
+        flex-wrap: wrap;   
+        width: auto; 
+        max-width: 1022px;   
+        gap: 10px;
+        
+    }
+
+    .cards {        
+       gap: 100px;
+        
+}
+    
+    .caixadeimagens {
+        position: relative;
+        width: 500px;    
+        max-width: none;
+        border-radius: 11px;
+    }
+}
+
+    @media screen and (min-width:1441px) {
+        .producoes {
+            justify-self: center;
+            display: flex;
+            flex-wrap: wrap;   
+            width: 100%; 
+            max-width: 100%;   
+            gap: 10px;          
+      
+        }
+
+        .end {
+            font-size: 1rem;
+            
+        }
+           
+
+        
+       
+
+}
+
