@@ -63,7 +63,7 @@
 body {
     font-family: Raleway;
     color: white;
-    background:#020228;
+    background:linear-gradient(90deg, #020228 10%, #390034 90%);
     margin: 0;
     
     
@@ -260,20 +260,6 @@ h1 {
     
 /***TESTE DE BOTOES***/
 
-.cards:has(.card:nth-child(1):hover)
-.card:nth-child(2) {
-opacity: 0.2;
-}
-
-.cards:has(.card:nth-child(2):hover)
-.card:nth-child(1) {
-opacity: 0.2;
-}
-
-
-#multitelas:target {
-    font-size: large;
-}
 
 
 
@@ -489,6 +475,16 @@ opacity: 0.2;
     justify-content: space-between;
     width: 500px; 
     
+}
+
+.cards:has(.card:nth-child(1):hover)
+.card:nth-child(2) {
+opacity: 0.2;
+}
+
+.cards:has(.card:nth-child(2):hover)
+.card:nth-child(1) {
+opacity: 0.2;
 }
 
 #mobile {
