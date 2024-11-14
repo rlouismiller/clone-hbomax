@@ -4,6 +4,7 @@
 
 :root {
     scroll-behavior: smooth;
+    --fundo: linear-gradient(90deg, #020228 10%, #390034 90%);
 }
 
 
@@ -57,13 +58,88 @@
   }
 
 
+/*FORMULARIO DE EMAIL E SENHA*/
+
+.login_form-entrando {
+    
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.body__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.login_form {   
+    background: rgba(0,0,0, 0.5);
+    text-align: left;
+    border-radius: 25px;
+    
+    margin: 150px 20px;
+    padding: 20px;
+    color: white;
+}
+
+.login_form div {
+    padding: 20px 10%;
+    
+
+}
+
+.login_form-entrar {
+    text-align: center;
+    
+}
+
+.login_form_input {
+    width: 100%;
+    height: 3rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin: auto;
+    
+    border: 1px solid white;
+    color: rgb(183, 183, 183);
+    background: transparent;
+    
+}
+
+.email::placeholder, .password::placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.email:hover, .password:hover{
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.email:invalid, .password:invalid {
+    border: 2px solid red;
+}
+
+#entrar-form{
+    width: 100px;
+    text-align: center;
+    
+}
+   
+    
+    
+ 
+
+
 
 /*GLOBAIS*/
 
 body {
     font-family: Raleway;
     color: white;
-    background:linear-gradient(90deg, #020228 10%, #390034 90%);
+    background: var(--fundo);
     margin: 0;
     
     
@@ -97,7 +173,7 @@ li {
     padding: 1rem 0;
 }
 
- 
+
 
 
 img {
@@ -206,7 +282,7 @@ h1 {
     height: 2rem;
     line-height: 2rem;
     border-radius: 50px;  
-       
+    margin-top: 50px;
     animation: balanco 3s ease infinite;
     
     transition: 3s;
@@ -258,15 +334,7 @@ h1 {
    gap: 3.8rem;
 }
     
-/***TESTE DE BOTOES***/
-
-
-
-
-
-
-/***TESTE DE BOTOES***/
-    
+ 
     
 
 
@@ -278,7 +346,7 @@ h1 {
 
 .valorplanos {
     font-size: larger;
-    color: rgb(165, 29, 115);
+    color: rgb(208, 88, 162);
     font-weight: bolder;
 }
 
@@ -346,6 +414,8 @@ h1 {
 .navegacao {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 30px 0;
 }
 
@@ -526,6 +596,13 @@ opacity: 0.2;
 }
 
 @media screen and (min-width:1025px) {
+
+
+    .login_form {
+        width: 700px;
+        margin: 150px auto;
+        font-size: 1.2rem;
+    }
 
     .producoes {
         justify-self: center;
